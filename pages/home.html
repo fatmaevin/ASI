@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASI TURKISH KITCHEN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="flex items-center justify-between px-8 py-5 bg-black text-white">
+
+        <!-- Nav -->
+        <nav>
+          <ul class="flex gap-8 text-xl">
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+          </ul>
+        </nav>
+      
+        <!-- Logo -->
+        <img src="../images/logo.jpeg" alt="Logo" class="h-12 w-auto">
+      
+        <!-- Button -->
+        <a href="booking.html" class="bg-white text-black px-5 py-2 rounded-full">
+          Book Now
+        </a>
+      
+      </header>
+      <section class="relative h-[80vh] flex items-center justify-center text-center text-white">
+
+        <!-- Background image -->
+        <img
+          src="../images/background.jpeg"
+          class="absolute inset-0 w-full h-full object-cover"
+        />
+      
+        <!-- Dark overlay -->
+        <div class="absolute inset-0 bg-black/50"></div>
+      
+        <!-- Content -->
+        <div class="relative z-10 px-6">
+          
+          <h1 class="text-5xl font-bold mb-4">
+            Welcome to Asi Turkish Kitchen
+          </h1>
+      
+          <p class="text-lg mb-6 text-gray-200">
+            Authentic Turkish flavors, modern dining experience
+          </p>
+      
+          <div class="space-x-4">
+            <a href="booking.html"
+               class="bg-green-600 px-6 py-3 rounded-lg hover:bg-green-700">
+              Book Your Table
+            </a>
+      
+            <a href="#menu"
+               class="bg-white text-black px-6 py-3 rounded-lg hover:bg-gray-200">
+              View Menu
+            </a>
+          </div>
+      
+        </div>
+      
+      </section>
+      <section id="menu" class="py-20 px-6 bg-gray-50">
+
+        <h2 class="text-4xl font-bold text-center mb-12">
+          Our Menu
+        </h2>
+      
+        <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+      
+          <div class="menu-card">
+            <h3 class="text-xl font-bold">BARBECUES</h3>
+            
+          </div>
+      
+          <div class="menu-card">
+            <h3 class="text-xl font-bold">HOUSE SPECIALS</h3>
+            
+          </div>
+      
+          <div class="menu-card">
+            <h3 class="text-xl font-bold">MAIN DISHES</h3>
+            
+          </div>
+      
+          <div class="menu-card">
+            <h3 class="text-xl font-bold">HOT MEZES/SIDES</h3>
+            
+          </div>
+      
+          <div class="menu-card">
+            <h3 class="text-xl font-bold">COLD MEZES/SIDES</h3>
+            
+          </div>
+      
+          <div class="menu-card">
+            <h3 class="text-xl font-bold">SOUPS</h3>
+            
+          </div>
+      
+          <div class="menu-card">
+            <h3 class="text-xl font-bold">SPECIAL SALADS</h3>
+  
+          </div>
+      
+          <div class="menu-card">
+            <h3 class="text-xl font-bold">DESSERTS</h3>
+            
+          </div>
+      
+          <div class="menu-card">
+            <h3 class="text-xl font-bold">KIDS MENU</h3>
+            
+          </div>
+      
+          <div class="menu-card">
+            <h3 class="text-xl font-bold">SIDES</h3>
+            
+          </div>
+      
+        </div>
+      
+      </section>
+      <script src="script.js"></script>
+
+    
+</body>
+</html>
