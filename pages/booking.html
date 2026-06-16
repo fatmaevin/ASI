@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-12">
+
+        <section class="w-full max-w-2xl bg-white rounded-2xl shadow-lg p-8">
+      
+          <h1 class="text-4xl font-bold text-center mb-2">
+            Book Your Table
+          </h1>
+      
+          <p class="text-center text-gray-500 mb-8">
+            Reserve your table and enjoy an authentic Turkish dining experience.
+          </p>
+      
+          <form id="booking-form" class="space-y-6">
+      
+            <div>
+              <label for="name" class="block mb-2 font-medium">
+                Full Name
+              </label>
+              <input
+                id="name"
+                type="text"
+                required
+                class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-green-600"
+              />
+            </div>
+      
+            <div class="grid md:grid-cols-2 gap-6">
+      
+              <div>
+                <label for="phone" class="block mb-2 font-medium">
+                  Phone Number
+                </label>
+                <input
+                  id="phone"
+                  type="tel"
+                  required
+                  class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-green-600"
+                />
+              </div>
+      
+              <div>
+                <label for="email" class="block mb-2 font-medium">
+                  Email Address
+                </label>
+                <input
+                  id="email"
+                  type="email"
+                  required
+                  class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-green-600"
+                />
+              </div>
+      
+            </div>
+      
+            <div class="grid md:grid-cols-2 gap-6">
+      
+              <div>
+                <label for="date" class="block mb-2 font-medium">
+                  Date
+                </label>
+                <input
+                  id="date"
+                  type="date"
+                  required
+                  class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-green-600"
+                />
+              </div>
+      
+              <div>
+                <label for="time" class="block mb-2 font-medium">
+                  Time
+                </label>
+                <input
+                  id="time"
+                  type="time"
+                  required
+                  class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-green-600"
+                />
+              </div>
+      
+            </div>
+      
+            <div>
+              <label for="guests" class="block mb-2 font-medium">
+                Number of Guests
+              </label>
+              <input
+                id="guests"
+                type="number"
+                min="1"
+                max="20"
+                required
+                class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-green-600"
+              />
+            </div>
+      
+            <div>
+              <label for="requests" class="block mb-2 font-medium">
+                Special Requests
+              </label>
+              <textarea
+                id="requests"
+                rows="4"
+                class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-green-600"
+                placeholder="Any allergies or special requests?"
+              ></textarea>
+            </div>
+      
+            <button
+              type="submit"
+              class="w-full bg-green-600 text-white font-semibold py-3 rounded-lg hover:bg-green-700 transition"
+            >
+              Reserve Table
+            </button>
+      
+          </form>
+      
+        </section>
+      
+      </main>
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+   <script src="../js/booking.js"></script>
+    
+</body>
+</html>
