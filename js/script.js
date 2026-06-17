@@ -21,7 +21,7 @@ const menuData = [
       { name: "KUZU SIS BEYTI", price: 20.0 },
       { name: "TAVUK SIS BEYTI", price: 18.0 },
       { name: "ADANA BEYTI", price: 18.0 },
-      { name: "ALI HAZIK (CHICKEN OR LAMB)", price: 20.0 },
+      { name: "ALI NAZIK (CHICKEN OR LAMB)", price: 20.0 },
     ],
   },
   {
@@ -115,13 +115,37 @@ menuData.forEach((category) => {
   card.className =
     "bg-white p-6 rounded-lg shadow cursor-pointer hover:shadow-xl transition";
 
-  card.innerHTML = `
-    <h3 class="text-xl font-bold toggle">${category.title}</h3>
-
-    <div class="content hidden mt-4 text-gray-600 space-y-2">
-      ${category.items
-        .map((item) => `<p>${item.name} — £${item.price}</p>`)
-        .join("")}
+    card.innerHTML = `
+    <div class="border-b border-gray-200 pb-4">
+  
+      <!-- CATEGORY HEADER -->
+      <h3 class="text-2xl font-light tracking-wide cursor-pointer toggle hover:text-amber-600 transition">
+        ${category.title}
+      </h3>
+  
+      <!-- ITEMS -->
+      <div class="content hidden mt-6 space-y-4">
+  
+        ${category.items
+          .map(
+            (item) => `
+            <div class="flex justify-between items-center group">
+  
+              <span class="text-gray-700 group-hover:text-black transition">
+                ${item.name}
+              </span>
+  
+              <span class="text-amber-600 font-medium">
+                £${item.price}
+              </span>
+  
+            </div>
+          `
+          )
+          .join("")}
+  
+      </div>
+  
     </div>
   `;
 
