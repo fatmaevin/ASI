@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta name="google-site-verification" content="AAxFYGFLbwFj5i3RNHI4XoOvLf9F2CoHDr0Rk5swUQI" />
+
   <title>ASI TURKISH KITCHEN</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -13,14 +15,13 @@
   </style>
 </head>
 
-<body class="m-0">
+<body class="m-0 overflow-x-hidden">
 
 <!-- NAVBAR -->
-<header class="grid grid-cols-1 md:grid-cols-3 items-center gap-4 px-6 md:px-12 py-6 bg-black text-white">
+<header class="grid grid-cols-1 md:grid-cols-3 items-center gap-6 px-6 md:px-12 py-6 bg-black text-white">
 
-  <!-- NAV -->
   <nav>
-    <ul class="flex flex-wrap justify-center md:justify-start gap-4 md:gap-8 text-base md:text-xl">
+    <ul class="flex flex-wrap justify-center md:justify-start gap-3 md:gap-8 text-sm md:text-xl">
       <li><a href="#home" class="hover:text-gray-300">Home</a></li>
       <li><a href="#menu" class="hover:text-gray-300">Menu</a></li>
       <li><a href="#about" class="hover:text-gray-300">About</a></li>
@@ -28,20 +29,13 @@
     </ul>
   </nav>
 
-  <!-- LOGO -->
   <div class="text-center leading-none">
-
-    <div class="text-3xl md:text-4xl font-extralight tracking-[0.5em]">
-      ASI
-    </div>
-  
+    <div class="text-3xl md:text-4xl font-extralight tracking-[0.5em]">ASI</div>
     <div class="text-[10px] md:text-xs tracking-[0.6em] text-gray-400 uppercase mt-1">
       Turkish Kitchen
     </div>
-  
   </div>
 
-  <!-- BUTTON -->
   <div class="flex justify-center md:justify-end">
     <a href="/pages/booking.html"
        class="bg-white text-black px-5 py-2 rounded-full hover:bg-gray-200 transition">
@@ -52,7 +46,7 @@
 </header>
 
 <!-- HERO -->
-<section id="home" class="relative h-screen flex items-center justify-center text-center text-white">
+<section id="home" class="relative min-h-screen flex items-center justify-center text-center text-white">
 
   <img src="images/background.jpeg"
        class="absolute inset-0 w-full h-full object-cover">
@@ -70,7 +64,7 @@
     </p>
 
     <a href="/pages/booking.html"
-       class="bg-red-900  px-6 py-3 rounded-lg hover:bg-red-800 ">
+       class="bg-red-900 px-6 py-3 rounded-lg hover:bg-red-800">
       Book Your Table
     </a>
 
@@ -79,30 +73,30 @@
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="py-40 bg-white">
+<section id="about" class="py-16 md:py-40 bg-white">
 
   <div class="max-w-7xl mx-auto px-6">
 
-    <div class="grid grid-cols-12 gap-16 items-center">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16 items-center">
 
-      <!-- LEFT TEXT -->
-      <div class="col-span-12 md:col-span-5">
+      <!-- TEXT -->
+      <div class="md:col-span-5">
 
-        <p class="text-xs tracking-[0.35em] uppercase text-gray-400 mb-8">
+        <p class="text-xs tracking-[0.35em] uppercase text-gray-400 mb-6">
           About Us
         </p>
 
-        <h2 class="text-5xl md:text-6xl font-light leading-[1.1] mb-10">
+        <h2 class="text-3xl sm:text-4xl md:text-6xl font-light leading-tight mb-6 md:mb-10">
           Turkish cuisine<br>
           redefined
         </h2>
 
-        <p class="text-gray-600 leading-8 mb-10">
+        <p class="text-gray-600 leading-7 md:leading-8 mb-8 max-w-prose">
           Asi Turkish Kitchen blends tradition with modern fine dining,
           offering a refined experience inspired by authentic Turkish flavours.
         </p>
 
-        <div class="space-y-5 text-gray-700">
+        <div class="space-y-3 md:space-y-5 text-gray-700 text-sm md:text-base">
           <p>Authentic recipes</p>
           <p>Fresh daily ingredients</p>
           <p>Modern presentation</p>
@@ -110,19 +104,17 @@
 
       </div>
 
-      <!-- RIGHT IMAGES STACK -->
-      <div class="col-span-12 md:col-span-7 relative h-[450px] md:h-[650px]">
+      <!-- IMAGES -->
+      <div class="md:col-span-7 relative h-[300px] sm:h-[400px] md:h-[650px] overflow-hidden">
 
-        <!-- BACK IMAGE -->
         <img
           src="images/about1.png"
-          class="absolute top-0 left-0 w-[85%] h-[85%] object-cover rounded-3xl shadow-2xl"
+          class="absolute top-0 left-0 w-[90%] md:w-[85%] h-[85%] object-cover rounded-3xl shadow-2xl"
         />
 
-        <!-- FRONT IMAGE -->
         <img
           src="images/about.png"
-          class="absolute bottom-0 right-0 w-[70%] h-[70%] object-cover rounded-3xl shadow-2xl border-4 border-white"
+          class="absolute bottom-0 right-0 w-[75%] md:w-[70%] h-[70%] object-cover rounded-3xl shadow-2xl border-4 border-white"
         />
 
       </div>
@@ -138,13 +130,13 @@
 
   <div class="flex flex-col items-center mb-10">
 
-    <h2 class="text-4xl font-bold mb-4">Our Menu</h2>
-  
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Menu</h2>
+
     <a href="images/menu.pdf" target="_blank"
        class="bg-[#4a0f1f] text-white px-6 py-3 rounded-full hover:bg-[#5c1426] transition">
       View Menu
     </a>
-  
+
   </div>
 
   <div id="menu-container"
@@ -152,52 +144,36 @@
   </div>
 
 </section>
+
 <!-- CONTACT -->
-<section id="contact" class="py-28 px-6 bg-black text-white">
+<section id="contact" class="py-20 md:py-28 px-6 bg-black text-white">
 
   <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-    <!-- LEFT IMAGE (TIMES) -->
     <div class="flex justify-center md:justify-start">
 
-      <img 
-        src="images/times.png"
-        alt="Opening Hours"
-        class="w-full max-w-sm rounded-2xl shadow-2xl object-cover"
-      />
+      <img src="images/times.png"
+           class="w-full max-w-sm rounded-2xl shadow-2xl object-cover" />
 
     </div>
 
-    <!-- RIGHT CONTENT -->
     <div class="text-center md:text-left">
 
-      <h2 class="text-4xl font-bold mb-10">Contact Us</h2>
+      <h2 class="text-3xl md:text-4xl font-bold mb-10">Contact Us</h2>
 
-      <!-- INSTAGRAM -->
       <div class="flex justify-center md:justify-start items-center gap-3 mb-6">
-
-        <img 
-          src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-          class="w-6 h-6"
-          alt="Instagram"
-        />
-
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+             class="w-6 h-6" />
         <a href="https://www.instagram.com/asiturkishkitchen/"
-           target="_blank"
            class="text-lg hover:text-pink-400">
           @asiturkishkitchen
         </a>
-
       </div>
 
-      <!-- PHONE -->
-      <div class="text-lg mb-4">
-        📞 +44 7000 000000
-      </div>
+      <div class="text-lg mb-4">📞 01482 883455</div>
 
-      <!-- LOCATION (optional) -->
       <div class="text-gray-300">
-        📍 2-4 paragon st,, Kingston upon Hull HU1 3QT
+        📍 2-4 paragon st, Kingston upon Hull HU1 3QT
       </div>
 
     </div>
@@ -205,6 +181,7 @@
   </div>
 
 </section>
+
 <script src="js/script.js"></script>
 
 </body>
