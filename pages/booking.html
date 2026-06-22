@@ -55,33 +55,33 @@
     <form id="booking-form" class="space-y-6">
 
       <!-- NAME -->
-      <input id="name" type="text" placeholder="Full Name"
+      <input id="name" type="text" placeholder="Full Name" required
         class="w-full p-4 rounded-xl bg-gray-100 border focus:bg-white focus:ring-2 focus:ring-green-600 outline-none">
 
       <!-- PHONE + EMAIL -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-        <input id="phone" type="tel" placeholder="Phone Number"
+        <input id="phone" type="tel" placeholder="Phone Number" required
           class="w-full p-4 rounded-xl bg-gray-100 border focus:bg-white focus:ring-2 focus:ring-green-600 outline-none">
 
-        <input id="email" type="email" placeholder="Email"
+        <input id="email" type="email" placeholder="Email" required
           class="w-full p-4 rounded-xl bg-gray-100 border focus:bg-white focus:ring-2 focus:ring-green-600 outline-none">
 
       </div>
 
       <!-- DATE + TIME -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-        <input id="date" type="date"
+        <label for="date">Date</label>
+        <input id="date" type="date" required
           class="w-full p-4 rounded-xl bg-gray-100 border">
-
-        <input id="time" type="time"
+        <label for="time" >Time</label>
+        <input id="time" type="time" required
           class="w-full p-4 rounded-xl bg-gray-100 border">
 
       </div>
 
       <!-- GUESTS -->
-      <input id="guests" type="number" min="1" max="20" placeholder="Number of Guests"
+      <input id="guests" type="number" min="1" max="20" placeholder="Number of Guests" required
         class="w-full p-4 rounded-xl bg-gray-100 border">
 
       <!-- REQUESTS -->
